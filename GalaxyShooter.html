@@ -3,9 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Galaxy Shooter</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jake Stewart - Web developer with a keen interest in Web Design, Web UX/UI and Web development.">
+    <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/styles-minify.css?version=1">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries-minify.css">
+    <title>JS - Web Developer | Galaxy Shooter</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favIcons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favIcons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favIcons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favIcons/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favIcons/safari-pinned-tab.svg" color="#5bbad5">
+    <!--<link rel="shortcut icon" href="TemplateData/favicon.ico">-->
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
@@ -13,13 +25,84 @@
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Galaxy Shooter</div>
+    <header class="header-gs">
+      <nav>
+        <div class="row" id="home">
+            <img src="resources/imgs/JS_Logo_Light.webp" alt="JS Web development logo" class="logo">
+            <img src="resources/imgs/JS_Logo.webp" alt="JS Web development logo" class="logo-black">
+            <ul class="main-nav js--main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Meet Me</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+        </div>           
+      </nav>
+      <div class="hero-text-box">
+           <h1>Galaxy Shooter<br>Top down space shooter inspired by the Shoot 'em ups of the 80s</h1>
+           <a class="btn btn-full js--scroll-to-game" href="#">Play</a>
+       </div>
+  </header>
+    <section class="section-game-origin" id="gameOrigin">
+      <div class="row">
+          <h2>Galaxy Shooter - Origins</h2>
+          <p class="long-copy">
+            After spending a couple years developing and practising my Web Development skills and started my own journey developing outside of a commercial setting, I decided to dive back into my main hobby developing video games.
+            <br><br>
+            To get myself started out I invested in a few Udemy courses to get myself back up to speed and to familiarise myself with the Unity engine since my days at University.
+            <br><br>
+            Following the excellent Jonathan Weinberger and his courses on Udemy I was able to produce the following game. This game is a trial product of diving back into the Unity game engine, the course allowed me to learn the process of design, development and deployment.    
+          </p>
+          <div class="flex-row">
+            <img class="flex-column container-image" src="resources/css/imgs/GS_Menu.png">
+            <img class="flex-column container-image" src="resources/css/imgs/GS_Start.png">
+          </div>  
+          
+          <div class="flex-row">
+            <img class="flex-column container-image" src="resources/css/imgs/GS_Gameplay_1.png">
+            <img class="flex-column container-image" src="resources/css/imgs/GS_Gameplay_2.png">
+          </div>   
+          <div class="flex-row">
+            <img class="flex-column container-image" src="resources/css/imgs/GS_Gameplay_3.png">
+            <img class="flex-column container-image" src="resources/css/imgs/GS_End.png">
+          </div>             
+      </div>  
+    </section>
+    <section class="section-game js--section-game" id="galaxyShooter">
+      <div class="row">
+        <h2>Galaxy Shooter - WebGL</h2>
+        <br>
+        <div class="webgl-content">
+          <div id="unityContainer" style="width: 960px; height: 600px"></div>
+          <div class="footer">
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            <div class="title">Galaxy Shooter</div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <footer>
+      <div class="row">
+          <ul class="social-links">
+              <li><a href="https://www.facebook.com/Jake.Stew.95"><i class="ion-social-facebook"></i></a></li>
+              <li><a href="https://github.com/JakeyStew"><i class="ion-social-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/jake-stewart-426416aa/"><i class="ion-social-linkedin"></i></a></li>
+          </ul>
+      </div>
+      <div class="row">
+          <p>
+              Copyright &copy; 2019 by Jake Stewart. All rights reserved.
+          </p>
+      </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+  <script src="vendor/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.min.js"></script>
   </body>
 </html>
